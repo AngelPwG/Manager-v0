@@ -7,6 +7,6 @@ module org.example.managerv0 {
     requires org.kordamp.ikonli.javafx;
     requires java.sql;
 
-    opens managerv0 to javafx.fxml;
+    opens managerv0.controllers to javafx.fxml;
     exports managerv0;
 }

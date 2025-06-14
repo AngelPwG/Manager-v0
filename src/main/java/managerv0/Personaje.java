@@ -7,39 +7,73 @@ public class Personaje {
     private String raza;
     private String descripcion;
     private int nivel;
+    private Stats stats;
 
     public Personaje() {}
 
-    public Personaje(int id, String nombre, String clase, String raza, String descripcion, int nivel) {
+    public Personaje(int id, String nombre, String clase, String raza, String descripcion, int nivel, Stats stats) {
         this.id = id;
         this.nombre = nombre;
         this.clase = clase;
         this.raza = raza;
         this.descripcion = descripcion;
         this.nivel = nivel;
+        this.stats = stats;
     }
 
-    public int getId() {return id;}
+    public int getId() {
+        return id;
+    }
 
-    public void setId(int id) {this.id = id;}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    public String getNombre() {return nombre;}
+    public String getNombre() {
+        return nombre;
+    }
 
-    public void setNombre(String nombre) {this.nombre = nombre;}
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-    public String getClase() {return clase;}
+    public String getClase() {
+        return clase;
+    }
 
-    public void setClase(String clase) {this.clase = clase;}
+    public void setClase(String clase) {
+        this.clase = clase;
+    }
 
-    public String getRaza() {return raza;}
+    public String getRaza() {
+        return raza;
+    }
 
-    public void setRaza(String raza) {this.raza = raza;}
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
 
-    public String getDescripcion() {return descripcion;}
+    public String getDescripcion() {
+        return descripcion;
+    }
 
-    public void setDescripcion(String descripcion) {this.descripcion = descripcion;}
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
 
-    public int getNivel() {return nivel;}
+    public int getNivel() {
+        return nivel;
+    }
 
-    public void setNivel(int nivel) {this.nivel = nivel;}
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public Stats getStats() {
+        return stats;
+    }
+
+    public void setStats(Stats stats) {
+        this.stats = stats;
+    }
 }

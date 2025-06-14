@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="managerv0.controllers.MainController">
+    <left>
+        <VBox style="-fx-background-color: #23272e;" spacing="10" alignment="CENTER">
+            <Label text="DM Manager"
+                   style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 20 0 20 0;" />
+            <Separator />
+            <Button text="Campañas" onAction="#showCampaigns" styleClass="sidebar-btn"/>
+            <Button text="Personajes" onAction="#showCharacters" styleClass="sidebar-btn"/>
+            <Button text="Monstruos" onAction="#showMonsters" styleClass="sidebar-btn"/>
+            <Button text="Sesiones" onAction="#showSessions" styleClass="sidebar-btn"/>
+            <Button text="Notas" onAction="#showNotes" styleClass="sidebar-btn"/>
+        </VBox>
+    </left>
+    <center>
+        <StackPane fx:id="mainContent" style="-fx-background-color: #282c34;">
+            <Label text="¡Bienvenido al gestor de campañas de rol!"
+                   style="-fx-text-fill: #e3e3e3; -fx-font-size: 24px;"/>
+        </StackPane>
+    </center>
+</BorderPane>
